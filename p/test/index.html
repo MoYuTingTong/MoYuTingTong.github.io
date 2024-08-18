@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hello World.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是一个测试文档">
 <title>Test</title>
 
 <link rel='canonical' href='http://localhost:1313/p/test/'>
 
 <link rel="stylesheet" href="/scss/style.min.e8c7fca7d1c9294aa7a4f3426c225ee26540f7d94e39be0b5a4a5c8a49ca5a25.css"><meta property='og:title' content="Test">
-<meta property='og:description' content="Hello World.">
+<meta property='og:description' content="这是一个测试文档">
 <meta property='og:url' content='http://localhost:1313/p/test/'>
 <meta property='og:site_name' content='演示站点'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-06T18:37:41&#43;08:00'/><meta property='article:modified_time' content='2024-08-06T18:37:41&#43;08:00'/>
 <meta name="twitter:title" content="Test">
-<meta name="twitter:description" content="Hello World.">
+<meta name="twitter:description" content="这是一个测试文档">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
   
 
 
@@ -64,8 +66,6 @@
                     
                 
                 </a>
-                
-                    <span class="emoji">🍥</span>
                 
             </figure>
             
@@ -174,7 +174,49 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一分区与工作流">一、分区与工作流</a>
+      <ol>
+        <li><a href="#一git分区">（一）Git分区</a></li>
+        <li><a href="#二git工作流">（二）git工作流</a></li>
+      </ol>
+    </li>
+    <li><a href="#二暂存区文件">二、暂存区文件</a>
+      <ol>
+        <li><a href="#一git文件状态">（一）Git文件状态</a></li>
+        <li><a href="#二添加文件到暂存区">（二）添加文件到暂存区</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -188,6 +230,10 @@
             <a href="/p/test/">Test</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            这是一个测试文档
+        </h3>
         
     </div>
 
@@ -238,7 +284,66 @@
     
     
     <p>Hello World.</p>
-
+<h2 id="一分区与工作流">一、分区与工作流
+</h2><h3 id="一git分区">（一）Git分区
+</h3><p>Git的分区包括工作区、暂存区、本地仓库（本地版本库）、远程仓库（远程版本库）。</p>
+<ol>
+<li>
+<p>工作区（Workspace）<br>
+工作区即本地代码所在的目录，同时也是存放 .git/ （本地仓库）的目录。</p>
+</li>
+<li>
+<p>暂存区（Index/Stage）<br>
+暂存区是工作区和本地仓库的缓存空间，里面记录着即将提交给本地仓库（版本库）的文件修改信息，.git/ 目录里的index文件就是暂存区。</p>
+</li>
+<li>
+<p>本地仓库（Repository）<br>
+本地仓库也称本地库或版本库，存放了本地的所有版本（commit提交记录），本地仓库的文件都在 .git/ 目录中。</p>
+</li>
+<li>
+<p>远程仓库（Remote）<br>
+远程仓库在网络上，GitHub、Gitee和GitLab都能创建远程仓库，和本地仓库一样，远程仓库存放的也是不同的代码版本，只是这些版本可以来自多个本地仓库。</p>
+</li>
+</ol>
+<h3 id="二git工作流">（二）git工作流
+</h3><h2 id="二暂存区文件">二、暂存区文件
+</h2><h3 id="一git文件状态">（一）Git文件状态
+</h3><p>在管理暂存区之前，我们还需要了解工作区文件的几种状态：</p>
+<p><code>Untracked</code>未跟踪，工作区中没有加入过暂存区的文件，不参与版本控制;<br>
+<code>Unmodified</code>未修改，加入版本控制，但和版本库中文件快照相同；<br>
+<code>Modified</code>已修改，加入版本控制，而且和上次加入版本库时的快照不同；<br>
+<code>Staged</code>已暂存，下一步可以提交到本地仓库（版本库）</p>
+<p><code>git status</code>命令可以用来查看工作区文件当前的状态：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git status [filename]    #查看指定文件的状态
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git status    #查看所有文件状态
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git status -s     #精简的方式显示文件状态
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="二添加文件到暂存区">（二）添加文件到暂存区
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add [filename]    #添加指定文件到暂存区
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git add -A    #添加工作区所有文件到暂存区
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -342,12 +447,12 @@
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
         2024 MoYuTingTong
     </section>
     
     <section class="powerby">
+        
+            test <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
