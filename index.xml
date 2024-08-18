@@ -7,6 +7,74 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>MoYuTingTong</copyright>
-        <lastBuildDate>Tue, 06 Aug 2024 18:37:41 +0800</lastBuildDate><atom:link href="https://MoYuTingTong.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 06 Aug 2024 18:37:41 +0800</lastBuildDate><atom:link href="https://MoYuTingTong.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://MoYuTingTong.github.io/p/test/</link>
+        <pubDate>Tue, 06 Aug 2024 18:37:41 +0800</pubDate>
+        
+        <guid>https://MoYuTingTong.github.io/p/test/</guid>
+        <description>&lt;p&gt;Hello World.&lt;/p&gt;
+&lt;h2 id=&#34;一分区与工作流&#34;&gt;一、分区与工作流
+&lt;/h2&gt;&lt;h3 id=&#34;一git分区&#34;&gt;（一）Git分区
+&lt;/h3&gt;&lt;p&gt;Git的分区包括工作区、暂存区、本地仓库（本地版本库）、远程仓库（远程版本库）。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;工作区（Workspace）&lt;br&gt;
+工作区即本地代码所在的目录，同时也是存放 .git/ （本地仓库）的目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;暂存区（Index/Stage）&lt;br&gt;
+暂存区是工作区和本地仓库的缓存空间，里面记录着即将提交给本地仓库（版本库）的文件修改信息，.git/ 目录里的index文件就是暂存区。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地仓库（Repository）&lt;br&gt;
+本地仓库也称本地库或版本库，存放了本地的所有版本（commit提交记录），本地仓库的文件都在 .git/ 目录中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;远程仓库（Remote）&lt;br&gt;
+远程仓库在网络上，GitHub、Gitee和GitLab都能创建远程仓库，和本地仓库一样，远程仓库存放的也是不同的代码版本，只是这些版本可以来自多个本地仓库。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二git工作流&#34;&gt;（二）git工作流
+&lt;/h3&gt;&lt;h2 id=&#34;二暂存区文件&#34;&gt;二、暂存区文件
+&lt;/h2&gt;&lt;h3 id=&#34;一git文件状态&#34;&gt;（一）Git文件状态
+&lt;/h3&gt;&lt;p&gt;在管理暂存区之前，我们还需要了解工作区文件的几种状态：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Untracked&lt;/code&gt;未跟踪，工作区中没有加入过暂存区的文件，不参与版本控制;&lt;br&gt;
+&lt;code&gt;Unmodified&lt;/code&gt;未修改，加入版本控制，但和版本库中文件快照相同；&lt;br&gt;
+&lt;code&gt;Modified&lt;/code&gt;已修改，加入版本控制，而且和上次加入版本库时的快照不同；&lt;br&gt;
+&lt;code&gt;Staged&lt;/code&gt;已暂存，下一步可以提交到本地仓库（版本库）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;命令可以用来查看工作区文件当前的状态：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status [filename]    #查看指定文件的状态
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status    #查看所有文件状态
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status -s     #精简的方式显示文件状态
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;二添加文件到暂存区&#34;&gt;（二）添加文件到暂存区
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add [filename]    #添加指定文件到暂存区
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add -A    #添加工作区所有文件到暂存区
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
     </channel>
 </rss>
