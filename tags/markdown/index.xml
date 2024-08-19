@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Markdown on MoYuTingTong&#39;s Blog</title>
+        <link>http://localhost:1313/tags/markdown/</link>
+        <description>Recent content in Markdown on MoYuTingTong&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>MoYuTingTong</copyright>
+        <lastBuildDate>Sun, 18 Aug 2024 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Markdown基本语法</title>
+        <link>http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+        <pubDate>Sun, 18 Aug 2024 22:00:00 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+        <description>&lt;img src="http://localhost:1313/cover1.jpg" alt="Featured image of post Markdown基本语法" /&gt;&lt;h2 id=&#34;一级标题----语法二级标题为实际一级标题--&#34;&gt;一级标题  &lt;!--语法二级标题为实际一级标题--&gt;
+&lt;/h2&gt;&lt;p&gt;1、字体格式强调&lt;br&gt;
+我们可以使用下面的方式给我们的文本添加强调的效果&lt;br&gt;
+&lt;em&gt;强调&lt;/em&gt;  (示例：斜体)&lt;br&gt;
+&lt;em&gt;强调&lt;/em&gt;  (示例：斜体)&lt;br&gt;
+&lt;strong&gt;加重强调&lt;/strong&gt;  (示例：粗体)&lt;br&gt;
+&lt;strong&gt;加重强调&lt;/strong&gt; (示例：粗体)&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;特别强调&lt;/strong&gt;&lt;/em&gt; (示例：粗斜体)&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;特别强调&lt;/strong&gt;&lt;/em&gt;  (示例：粗斜体)&lt;/p&gt;
+&lt;p&gt;2、代码&lt;br&gt;
+&lt;code&gt;&amp;lt;hello world&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3、代码块高亮&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@Override
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;protected void onDestroy() {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    EventBus.getDefault().unregister(this);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    super.onDestroy();
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;4、表格 （建议在表格前空一行，否则可能影响表格无法显示）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;表头（左对齐）&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;表头（居中对齐）&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;表头（右对齐）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格内容&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格内容&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格内容&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格内容&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
+&lt;/h3&gt;&lt;p&gt;Nothing could be better if you could reply me at your early convenience.&lt;/p&gt;
+&lt;h4 id=&#34;四级标题&#34;&gt;四级标题
+&lt;/h4&gt;&lt;p&gt;5、其他引用&lt;/p&gt;
+&lt;p&gt;6、列表&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2&lt;/li&gt;
+&lt;li&gt;项目3
+&lt;ul&gt;
+&lt;li&gt;项目1 （一个&lt;em&gt;号会显示为一个黑点，注意⚠️有空格，否则直接显示为&lt;/em&gt;项目1）&lt;/li&gt;
+&lt;li&gt;项目2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;7、换行（建议直接在前一行后面补两个空格）&lt;br&gt;
+直接回车不能换行，&lt;br&gt;
+可以在上一行文本后面补两个空格，&lt;br&gt;
+这样下一行的文本就换行了。
+或者就是在两行文本直接加一个空行。
+也能实现换行效果，不过这个行间距有点大。&lt;/p&gt;
+&lt;p&gt;8、引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一行引用文字&lt;br&gt;
+——《GBT/20203333》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;五级标题----语法五级标题为实际四级标题非必要不使用禁用六级标题--&#34;&gt;五级标题  &lt;!--语法五级标题为实际四级标题，非必要不使用。禁用六级标题--&gt;
+&lt;/h5&gt;&lt;p&gt;监测是否支持公式&lt;br&gt;
+$$\frac{1}{2}=x^2+1$$&lt;/p&gt;
+&lt;p&gt;TO DO LIST&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 要做的事情A&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 已完成的事情B
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 要做的事情A&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 已完成的事情B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
