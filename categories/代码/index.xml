@@ -13,7 +13,7 @@
         <pubDate>Sun, 18 Aug 2024 22:00:00 +0800</pubDate>
         
         <guid>http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
-        <description>&lt;img src="http://localhost:1313/cover1.jpg" alt="Featured image of post Markdown基本语法" /&gt;&lt;h2 id=&#34;一级标题----语法二级标题为实际一级标题--&#34;&gt;一级标题  &lt;!--语法二级标题为实际一级标题--&gt;
+        <description>&lt;img src="http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/cover1.jpg" alt="Featured image of post Markdown基本语法" /&gt;&lt;h2 id=&#34;一级标题----语法二级标题为实际一级标题--&#34;&gt;一级标题  &lt;!--语法二级标题为实际一级标题--&gt;
 &lt;/h2&gt;&lt;p&gt;1、字体格式强调&lt;br&gt;
 我们可以使用下面的方式给我们的文本添加强调的效果&lt;br&gt;
 &lt;em&gt;强调&lt;/em&gt;  (示例：斜体)&lt;br&gt;
@@ -110,7 +110,7 @@ $$\frac{1}{2}=x^2+1$$&lt;/p&gt;
         <pubDate>Sun, 18 Aug 2024 20:00:00 +0800</pubDate>
         
         <guid>http://localhost:1313/p/git%E5%AD%A6%E4%B9%A0/</guid>
-        <description>&lt;img src="http://localhost:1313/cover2.jpg" alt="Featured image of post git学习" /&gt;&lt;p&gt;Hello World.&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/p/git%E5%AD%A6%E4%B9%A0/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post git学习" /&gt;&lt;p&gt;Hello World.&lt;/p&gt;
 &lt;h2 id=&#34;分区与工作流&#34;&gt;分区与工作流
 &lt;/h2&gt;&lt;h3 id=&#34;git分区&#34;&gt;Git分区
 &lt;/h3&gt;&lt;p&gt;Git的分区包括工作区、暂存区、本地仓库（本地版本库）、远程仓库（远程版本库）。&lt;/p&gt;
