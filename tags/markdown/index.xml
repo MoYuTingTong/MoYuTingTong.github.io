@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Markdown on MoYuTingTong&#39;s Blog</title>
-        <link>http://localhost:1313/tags/markdown/</link>
+        <link>https://MoYuTingTong.github.io/tags/markdown/</link>
         <description>Recent content in Markdown on MoYuTingTong&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>MoYuTingTong</copyright>
-        <lastBuildDate>Sun, 18 Aug 2024 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en</language>
+        <copyright>MoYuTingTong&#39;s Blog</copyright>
+        <lastBuildDate>Sun, 18 Aug 2024 22:00:00 +0800</lastBuildDate><atom:link href="https://MoYuTingTong.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown基本语法</title>
-        <link>http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+        <link>https://MoYuTingTong.github.io/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
         <pubDate>Sun, 18 Aug 2024 22:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
-        <description>&lt;img src="http://localhost:1313/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/cover1.jpg" alt="Featured image of post Markdown基本语法" /&gt;&lt;h2 id=&#34;一级标题----语法二级标题为实际一级标题--&#34;&gt;一级标题  &lt;!--语法二级标题为实际一级标题--&gt;
+        <guid>https://MoYuTingTong.github.io/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+        <description>&lt;img src="https://MoYuTingTong.github.io/p/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/wallhaven-exwgw8.jpg" alt="Featured image of post Markdown基本语法" /&gt;&lt;h2 id=&#34;一级标题----语法二级标题为实际一级标题--&#34;&gt;一级标题  &lt;!--语法二级标题为实际一级标题--&gt;
 &lt;/h2&gt;&lt;p&gt;1、字体格式强调&lt;br&gt;
 我们可以使用下面的方式给我们的文本添加强调的效果&lt;br&gt;
 &lt;em&gt;强调&lt;/em&gt;  (示例：斜体)&lt;br&gt;

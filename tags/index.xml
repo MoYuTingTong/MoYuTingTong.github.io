@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on MoYuTingTong&#39;s Blog</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://MoYuTingTong.github.io/tags/</link>
         <description>Recent content in Tags on MoYuTingTong&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>MoYuTingTong</copyright>
-        <lastBuildDate>Sun, 18 Aug 2024 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en</language>
+        <copyright>MoYuTingTong&#39;s Blog</copyright>
+        <lastBuildDate>Sun, 18 Aug 2024 22:00:00 +0800</lastBuildDate><atom:link href="https://MoYuTingTong.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown</title>
-        <link>http://localhost:1313/tags/markdown/</link>
+        <link>https://MoYuTingTong.github.io/tags/markdown/</link>
         <pubDate>Sun, 18 Aug 2024 22:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/markdown/</guid>
+        <guid>https://MoYuTingTong.github.io/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>Git</title>
-        <link>http://localhost:1313/tags/git/</link>
+        <link>https://MoYuTingTong.github.io/tags/git/</link>
         <pubDate>Sun, 18 Aug 2024 20:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/git/</guid>
+        <guid>https://MoYuTingTong.github.io/tags/git/</guid>
         <description></description>
         </item>
         
